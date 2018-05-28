@@ -46,14 +46,6 @@ public class DataProviderDemoTest {
   @Test(dataProvider="performLogin")
   public void testSupersportLogin(String username,String password) {
 	  try {
-		  	
-		/*  driver.findElement(By.xpath(login.btn_loginorsignup_xpath)).click();
-		  driver.findElement(By.xpath(login.edit_username_xpath)).sendKeys(username);
-		  driver.findElement(By.xpath(login.edit_password_xpath)).sendKeys(password);
-		  driver.findElement(By.xpath(login.btn_login_xpath)).click();
-		  
-		  driver.findElement(By.xpath(login.btn_userAcc_xpath)).click();
-		  driver.findElement(By.xpath(login.btn_logout_xpath)).click();*/
 		  
 		  driver.findElement(By.xpath(login.userName_XPath)).sendKeys(username);
 		  driver.findElement(By.xpath(login.passWord_XPath)).sendKeys(password);
